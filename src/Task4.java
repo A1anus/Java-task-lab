@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-public class Main {
+public class Task4 {
 	public static void main(String[] args) {
 		System.out.println(nonRepeatable("abracadabra"));
 		System.out.println(nonRepeatable("paparazzi"));
@@ -242,7 +242,7 @@ public class Main {
 		for (String word: words) {
 			arr.add(word);
 		}
-		arr.sort(Comparator.comparingInt(Main::extractNumb));
+		arr.sort(Comparator.comparingInt(Task4::extractNumb));
 		String temp  = arr.stream().collect(Collectors.joining(" "));
 		temp = temp.replaceAll("\\d", "");
 		return temp;
