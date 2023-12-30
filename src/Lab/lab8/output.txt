@@ -1,0 +1,9 @@
+banana 20
+cherry 30
+
+banana 40
+apple 20
+cherry 60
+
+Sum: 60
+
